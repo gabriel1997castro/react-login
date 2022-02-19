@@ -1,5 +1,11 @@
+import { Box, Container } from "./styles";
+
 export function Login() {
   return (
-    <div>login</div>
+    <Container>
+      <Box>
+        <h1>login</h1>
+      </Box>
+    </Container>
   )
 }
