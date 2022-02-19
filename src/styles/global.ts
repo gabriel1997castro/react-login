@@ -15,6 +15,9 @@ export const GlobalStyle = createGlobalStyle`
     --secondary-button-background-color: #BF1541;
     --facebook-button-background-color: #385C8E;
     --google-button-background-color: #F14436;
+
+    --input-border-color: #C3C3C3;
+    --input-background-color: #FFFFFF;
   }
 
   * {
