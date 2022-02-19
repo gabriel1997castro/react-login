@@ -3,16 +3,18 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
   :root {
     --background: #f0f2f5;
-    --red: #e52e4d;
-    --green: #33CC95;
-    --blue: #5429CC;
+    --container-background: #FFFFFF;
 
-    --blue-light: #6933FF;
+    --primary-font-color: #000000;
+    --secondary-font-color: ##B0B0B0;
+    --placeholder-font-color: #767676;
+    --button-primary-font-color: #FFFFFF;
 
-    --text-title: #363f5f;
-    --text-body: #969cb3;
-
-    --shape: #ffffff;
+    --link-button-color: #1A4F8B;
+    --primary-button-background-color: #1A4F8B;
+    --secondary-button-background-color: #BF1541;
+    --facebook-button-background-color: #385C8E;
+    --google-button-background-color: #F14436;
   }
 
   * {
