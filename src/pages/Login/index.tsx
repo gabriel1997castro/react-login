@@ -1,5 +1,7 @@
-import { Box, Container, Image, InputText, Form, MainText, Link, Button, InputGroup, InputIcon, FacebookButton, SocialMediaWrapper, GoogleButton } from "./styles";
+import { Container, Image, Form, SocialMediaWrapper, ForgotPasswordWrapper } from "./styles";
+import { Button, GoogleButton, FacebookButton, Link, InputText, InputGroup, InputIcon, Box, Title } from '../../components'
 import assets from '../../assets';
+import { colors } from "../../styles/colors";
 
 export function Login() {
   return (
@@ -7,21 +9,21 @@ export function Login() {
       <Box>
         <Image src={assets.login} alt="Login" />
         <Form>
-          <MainText>Welcome Back!</MainText>
-          <InputGroup>
+          <Title>Welcome Back!</Title>
+          <InputGroup style={{ marginTop: '2rem' }}>
             <InputIcon src={assets.contactIcon} />
             <InputText placeholder="example@email.com" type="email" id="login-email" />
           </InputGroup>
-          <InputGroup>
+          <InputGroup style={{ marginTop: '2rem' }}>
             <InputIcon src={assets.lockIcon} />
             <InputText placeholder="password" type="password" />
           </InputGroup>
-          <Link type="button">Forgot Password?</Link>
-          <Button type="submit">LOG IN</Button>
-          <span>Or connect with social</span>
+          <ForgotPasswordWrapper><Link type="button">Forgot Password?</Link></ForgotPasswordWrapper>
+          <Button style={{ margin: '2rem 0rem' }}type="submit">LOG IN</Button>
+          <span style={{ color: colors.secondaryFont, marginBottom: '2rem' }}>Or connect with social</span>
           <SocialMediaWrapper>
-            <FacebookButton type="button">Facebook</FacebookButton>
-            <GoogleButton type="button">Google</GoogleButton>
+            <FacebookButton style={{ marginRight: '0.25rem' }} type="button">Facebook</FacebookButton>
+            <GoogleButton style={{ marginLeft: '0.25rem' }} type="button">Google</GoogleButton>
           </SocialMediaWrapper>
         </Form>
       </Box>
