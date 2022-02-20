@@ -9,7 +9,7 @@ export const Container = styled.div`
   overflow: scroll;
 `;
 
-export const Form = styled.form`
+export const InternalContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 21.5rem;
