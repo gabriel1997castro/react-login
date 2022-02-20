@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import assets from "../../assets";
 import { Box, Button, Image, InputGroup, InputText, Title } from "../../components";
-import { Container, InternalContainer, MonthAndCvvWrapper } from "./styles";
+import { Container, InternalContainer, MonthAndCvvWrapper, Form } from "./styles";
 
 export function Upgrade() {
   const [creditCardNumber, setCreditCardNumber] = useState("");
@@ -25,17 +25,17 @@ export function Upgrade() {
   }
 
   const handleCvvChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if(e.target.value.length <= 3) setCreditCardCvv(e.target.value)
+    if (e.target.value.length <= 3) setCreditCardCvv(e.target.value)
   }
 
   return (
     <Container>
       <Box>
-        <form>
+        <Form>
+          <Title style={{ marginTop: '2rem', marginBottom: '2rem' }}>Get Pro Account</Title>
+          <Image src={assets.undrawOnlinePayments} alt="Upgrade to pro account" />
           <InternalContainer>
-            <Title>Get Pro Account</Title>
-            <Image src={assets.undrawOnlinePayments} alt="Upgrade to pro account" />
-            <InputGroup>
+            <InputGroup style={{ marginTop: '2rem' }}>
               <InputText
                 value={creditCardNumber}
                 placeholder="Card Number"
@@ -45,7 +45,7 @@ export function Upgrade() {
               />
             </InputGroup>
             <MonthAndCvvWrapper>
-              <InputGroup>
+              <InputGroup style={{ marginTop: '1rem', marginRight: '0.5rem' }}>
                 <InputText
                   value={creditCardMonth}
                   placeholder="MM/YY"
@@ -55,23 +55,23 @@ export function Upgrade() {
                   required
                 />
               </InputGroup>
-              <InputGroup>
+              <InputGroup style={{ marginTop: '1rem' }}>
                 <InputText
-                 value={creditCardCvv}
-                 placeholder="CVV"
-                 type="number"
-                 onChange={handleCvvChange}
-                 pattern="\d\d\d" 
-                 required
+                  value={creditCardCvv}
+                  placeholder="CVV"
+                  type="number"
+                  onChange={handleCvvChange}
+                  pattern="\d\d\d"
+                  required
                 />
               </InputGroup>
             </MonthAndCvvWrapper>
-            <InputGroup>
+            <InputGroup style={{ marginTop: '1rem' }}>
               <InputText placeholder="ZIP/Postal Code" name="number" type="text" required />
             </InputGroup>
             <Button style={{ margin: '2rem 0rem' }} backgroundColor="secondary" type="submit">Upgrade</Button>
           </InternalContainer>
-        </form>
+        </Form>
       </Box>
     </Container >
   )

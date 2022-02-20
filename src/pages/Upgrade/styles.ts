@@ -23,3 +23,9 @@ export const InternalContainer = styled.div`
   padding: 0.5rem;
   align-items: center;
 `;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
