@@ -20,6 +20,9 @@ export const GlobalStyle = createGlobalStyle`
     --input-background-color: #FFFFFF;
 
     --input-text-focus-color: #1A4F8B;
+
+    --tooltip-background-color: #767676;
+    --tooltip-font-color: #FFFFFF;
   }
 
   * {

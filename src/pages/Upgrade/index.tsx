@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import assets from "../../assets";
-import { Box, Button, Image, InputGroup, InputText, Title } from "../../components";
-import { Container, InternalContainer, MonthAndCvvWrapper, Form } from "./styles";
+import { Box, Button, Image, InputGroup, InputText, Title, Tooltip } from "../../components";
+import { Container, InternalContainer, MonthAndCvvWrapper, Form, TooltipWrapper } from "./styles";
 
 export function Upgrade() {
   const [creditCardNumber, setCreditCardNumber] = useState("");
@@ -66,6 +66,9 @@ export function Upgrade() {
                 />
               </InputGroup>
             </MonthAndCvvWrapper>
+            <TooltipWrapper>
+              <Tooltip text="A CVV number is the acronym for Card Verification Value. It is required to complete transactions using cards, but along with that, it also provides added security against scams.">What’s this?</Tooltip>
+            </TooltipWrapper>
             <InputGroup style={{ marginTop: '1rem' }}>
               <InputText placeholder="ZIP/Postal Code" name="number" type="text" required />
             </InputGroup>

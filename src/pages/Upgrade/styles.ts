@@ -29,3 +29,10 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
 `
+
+export const TooltipWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+`
