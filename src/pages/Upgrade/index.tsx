@@ -69,7 +69,7 @@ export function Upgrade() {
             <InputGroup style={{ marginTop: '1rem' }}>
               <InputText placeholder="ZIP/Postal Code" name="number" type="text" required />
             </InputGroup>
-            <Button style={{ margin: '2rem 0rem' }} backgroundColor="secondary" type="submit">Upgrade</Button>
+            <Button style={{ margin: '2rem 0rem' }} backgroundColor="secondary" type="submit">UPGRADE</Button>
           </InternalContainer>
         </Form>
       </Box>

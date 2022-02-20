@@ -15,7 +15,7 @@ export function ResetPassword() {
               <InputIcon src={assets.contactIcon} />
               <InputText placeholder="example@email.com" type="email" id="login-email" required />
             </InputGroup>
-            <Button style={{ margin: '2rem 0rem' }} type="submit">LOG IN</Button>
+            <Button style={{ margin: '2rem 0rem' }} type="submit">RESET</Button>
             <LoginLinkWrapper>
               <span style={{ color: colors.secondaryFont, marginRight: "0.5rem" }}>Already have an account?</span>
               <Link>Login here</Link>
