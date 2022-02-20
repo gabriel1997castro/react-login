@@ -2,8 +2,15 @@ import assets from "../../assets";
 import { Box, Button, Image, InputGroup, InputIcon, InputText, Link, Title } from "../../components";
 import { colors } from "../../styles/colors";
 import { Container, InternalContainer, LoginLinkWrapper } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 export function ResetPassword() {
+  let navigate = useNavigate();
+
+  function handleRedirectToLogin() {
+    navigate("/login")
+  }
+
   return (
     <Container>
       <Box>
@@ -18,7 +25,7 @@ export function ResetPassword() {
             <Button style={{ margin: '2rem 0rem' }} type="submit">RESET</Button>
             <LoginLinkWrapper>
               <span style={{ color: colors.secondaryFont, marginRight: "0.5rem" }}>Already have an account?</span>
-              <Link>Login here</Link>
+              <Link type="button" onClick={handleRedirectToLogin}>Login here</Link>
             </LoginLinkWrapper>
           </InternalContainer>
         </form>
