@@ -9,10 +9,6 @@ export const Container = styled.div`
   overflow: scroll;
 `;
 
-export const Image = styled.img`
-  max-width: 212px;
-`;
-
 export const Form = styled.form`
   display: flex;
   flex-direction: column;

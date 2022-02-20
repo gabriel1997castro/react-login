@@ -1,5 +1,5 @@
-import { Container, Image, Form, SocialMediaWrapper, ForgotPasswordWrapper } from "./styles";
-import { Button, GoogleButton, FacebookButton, Link, InputText, InputGroup, InputIcon, Box, Title } from '../../components'
+import { Container, Form, SocialMediaWrapper, ForgotPasswordWrapper } from "./styles";
+import { Button, GoogleButton, FacebookButton, Link, InputText, InputGroup, InputIcon, Box, Title, Image } from '../../components'
 import assets from '../../assets';
 import { colors } from "../../styles/colors";
 import { useNavigate } from "react-router-dom";
