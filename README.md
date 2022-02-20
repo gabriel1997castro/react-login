@@ -30,13 +30,12 @@ This is a simple project with clean interface with login, reset password and upg
 2. Install the dependencies of the application
 
 <pre><code>
-  # Install the dependencies
   $ yarn #ou npm install
 </code></pre>
 
 3. Run
 <pre><code>
-     yarn start # ou npm start
+  $ yarn start # ou npm start
 </code></pre>
 
 
