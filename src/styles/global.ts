@@ -18,6 +18,8 @@ export const GlobalStyle = createGlobalStyle`
 
     --input-border-color: #C3C3C3;
     --input-background-color: #FFFFFF;
+
+    --input-text-focus-color: #1A4F8B;
   }
 
   * {

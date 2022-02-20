@@ -1,5 +1,6 @@
 import { transparentize } from "polished";
 import styled from "styled-components";
+import { colors } from "../../styles/colors";
 
 interface ButtonProps {
   backgroundColor?: "primary" | "secondary";
@@ -9,13 +10,13 @@ export const Button = styled.button`
   width: 100%;
   max-width: 21.5rem;
   height: 3.125rem;
-  background-color: ${(props: ButtonProps) => props.backgroundColor === 'secondary' ? "#BF1541" : "#1A4F8B"}}
+  background-color: ${(props: ButtonProps) => props.backgroundColor === 'secondary' ? colors.secondaryButtonBackground : colors.primaryButtonBackground}}
   color: var(--button-primary-font-color);
   border-radius: 0.3125rem;
   border: none;
 
   &:hover {
-    background-color: ${transparentize(0.1, "#1A4F8B")};
+    background-color: ${(props) => transparentize(0.1, props.backgroundColor === 'secondary' ? colors.secondaryButtonBackground : colors.primaryButtonBackground)};
   }
 `;
 
@@ -29,7 +30,7 @@ export const FacebookButton = styled.button`
   border: none;
 
   &:hover {
-    background-color: ${transparentize(0.1, "#385C8E")};
+    background-color: ${transparentize(0.1, colors.facebookButtonBackground)};
   }
 `
 
@@ -43,6 +44,6 @@ export const GoogleButton = styled.button`
   border: none;
 
   &:hover {
-    background-color: ${transparentize(0.1, "#F14436")};
+    background-color: ${transparentize(0.1, colors.googleButtonBackground)};
   }
 `
